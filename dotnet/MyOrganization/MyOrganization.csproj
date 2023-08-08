@@ -8,4 +8,14 @@
     <StartupObject>MyOrganization.MyOrganization</StartupObject>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="microsoft.extensions.configuration\**" />
+    <EmbeddedResource Remove="microsoft.extensions.configuration\**" />
+    <None Remove="microsoft.extensions.configuration\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+  </ItemGroup>
+
 </Project>

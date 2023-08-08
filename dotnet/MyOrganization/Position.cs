@@ -17,7 +17,6 @@ namespace MyOrganization
         public Position(string title)
         {
             this.title = title;
-            employee = null;
             directReports = new HashSet<Position>();
         }
 
